@@ -3,6 +3,9 @@ class Loja
         if dia == "quarta-feira"
             return "desconto de 10% em monitores"
         end
+        if dia == "sexta-feira"
+            return "desconto de 30% em artigos esportivos"
+        end
     end
 end
 
