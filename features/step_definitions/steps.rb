@@ -1,11 +1,16 @@
-Dado("que hoje é {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+class Loja
+    def promo_day(dia)
+    end
+end
+
+Dado("que hoje é {string}") do |dia|
+    @hoje = dia
   end
   
   Quando("pergunto qual é a Promoção do dia") do
-    pending # Write code here that turns the phrase above into concrete actions
+    @valor_obtido = Loja.new.promo_day(@hoje)
   end
   
-  Então("a resposta deve ser {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Então("a resposta deve ser {string}") do |promo_esperada|
+    expect(@valor_obtido).to eql promo_esperada
   end
