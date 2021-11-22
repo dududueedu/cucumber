@@ -1,7 +1,7 @@
 class Loja
     def promo_day(dia)
-        if dia == "segunda-feira"
-            return "desconto em 10% em monitores"
+        if dia == "quarta-feira"
+            return "desconto de 10% em monitores"
         end
     end
 end
