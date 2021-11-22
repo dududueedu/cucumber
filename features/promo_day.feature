@@ -5,3 +5,5 @@ Funcionalidade: Promoção do dia!
 
 Cenário: Hoje é dia de desconto em eletrônicos
     Dado que hoje é "segunda-feira"
+    Quando pergunto qual é a Promoção do dia
+    Então a resposta deve ser "desconto em 10% em monitores"
